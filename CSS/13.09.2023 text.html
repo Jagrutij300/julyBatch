@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text</title>
+    <style>
+        .p1{
+           color: brown;
+           background-color: aqua;
+           /* text-align: center;  */
+           direction: rtl;
+           /* ltr= lest to right
+              rtl= right to left */
+           unicode-bidi: bidi-override;
+           /*  bidi-override text direction change only symbol alphabate samle bcz meaning is change text  rtl */
+        }
+        .p2{
+            text-align-last: center;
+            text-indent: 100px;
+            /* letter-spacing: 5px; */
+            line-height: 50px;
+            word-spacing: 30px;
+            white-space: nowrap;
+            /*  text align last- last ine shift to centre, left, right, justify(all space aquire
+              text indient = property work for first linw first word
+              letter spacing = every letter have specific space if minus value then lwteers ovelay each other
+              line height= distane betwwen line spacing two lines of text 
+              word spacing = distance between word also give value in minus
+              white space= nowrap all text in one horizantal line
+              )*/
+        }
+        .div1{
+            border: 2px solid blue;
+            height: 200px;
+            width: 300px;
+            text-align: center;
+
+        }
+        .p3{
+            /* overline, line throught,under line can be applied all at a same time*/
+             /* text-decoration-line: 
+               overline 
+               underline line-
+               through ;
+             text-decoration-color: blueviolet;
+             text-decoration-style: dashed;
+             text-decoration-thickness: 4px ; */
+             /* text-decoration-line: line(required) color(optional) style(optional) thickness(optional) */
+              text-decoration:  underline blueviolet dashed 4px;
+              text-transform: uppercase;
+              /* text transform have 3 type 
+              capitalize 
+              upercase 
+              lowercase */
+
+        }
+        .p4{
+            /* text-transform: lowercase; */
+            text-transform: capitalize;
+        }
+        .p5{
+            font-size: 70px;
+            color: aqua;
+            text-shadow: 3px 5px  blue;
+            /* text shadow have 2 value compalsoury 3px horizonal 5 px vertically blur or sharp   */
+        }
+        /* text align have 3 property
+         centre, left, right, justify(all space aquire) */
+    </style>
+</head>
+<body>
+    <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim placeat quis tenetur quos facilis, labore error, soluta suscipit facere, quia accusantium ducimus dolor! Consequatur error nam numquam totam earum debitis.</p>
+    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quibusdam molestiae, quia voluptatum odit ut incidunt eos culpa inventore adipisci facere sed possimus eius dolorem obcaecati labore soluta. Aliquid, accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quibusdam molestiae, quia voluptatum odit ut incidunt eos culpa inventore adipisci facere sed possimus eius dolorem obcaecati labore soluta. Aliquid, accusantium. </p>
+    <div class="div1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam officia impedit quis voluptas, veniam distinctio. Facere, ipsa. Esse reiciendis impedit ab quaerat, ea, omnis suscipit provident dolores similique non deleniti!</div>
+
+    <p class="p3">this is decoration example</p>
+    <p class="p4">SBBEGFIENKSDJOP4FR3UFH</p>
+
+    <p class="p5">example</p>
+
+</body>
+
+
+</html>

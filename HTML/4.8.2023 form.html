@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(){
+            console.log ('range changes')
+            let range= document.getElementById("ratings")
+            console.log(range.value)
+        }
+        
+         </script>
+</head>
+<body>
+    <h2>form</h2>
+    <!--get it is by defult attribute submit value by using url
+        post it is attribute submit value is not visibal for url
+        fieldset grouping all input set
+        legend use for headline group
+        -->
+    <form action="" method="get" autocomplete="on">
+   <fieldset>
+    <legend>personal information </legend>
+        <label for="first name"> first name</label> 
+        <input type="text" id="first name" name="fname" placeholder="enter your name" size="80" maxlength="5" required pattern="^(A-Za-z/s)+$" height="60">
+         
+        
+        
+        <br>
+        <label for="last name">last name</label> 
+        <input type="text" id="last name" name="lname" placeholder="enter your last name" onchange="console.log('value change')">
+        <br>
+        <label for="email id">email</label> 
+        <input type="email" id="email id" name="email">
+    </fieldset>
+
+       
+        <br>
+        <label for="pass">password</label> 
+        <input type="password" id="pass" name="password">
+        <br>
+        <br>
+        <label for="female">female</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="other">other</label>
+        <input type="radio" name="gender" id="other" value="other">
+        <br>
+        <br>
+        select the hobbies:
+        <input type="checkbox" name="reading" id="checkbox1">
+        <label for="">reading</label>
+        <input type="checkbox" name="dancing" id="checkbox2">
+        <label for="">dancing</label>
+        <input type="checkbox" name="racing" id="checkbox3">
+        <label for="">racing</label>
+        <input type="checkbox" name="coding" id="checkbox4">
+        <label for="">coding</label>
+        <input type="checkbox" name="watching movie" id="checkbox5">
+        <label for="">watching movies</label>
+        <br>
+        <br>
+        <label for="color">select color</label>
+        <input type="color" name="color" id="color" >
+        <br>
+
+        <label for="date"></label>
+        <input type="date" name="date" id="date">
+        <Br>
+        <label for="date time">date time</label>
+        <input type="datetime-local" name="datetime" id="datetime">
+        <br>
+        <label for="file">select file</label>
+        <input type="file" name="file" id="files" multiple>
+        <br>
+        <label for="quantity">enter quantity</label>
+        <input type="number" name="quantity" id="quantity" >
+        <br>
+        <br>
+        <label for="ratings"> give ratings 0-5</label>
+        <input type="range" name="ratings" id="ratings" min="0" max="5" value="3" step="10" onchange="check()">
+        <br><br> 
+        <label for="telephone"> enter telephone number</label>
+        <input type="tel" name="telephone" id="celephone" pattern="(0-9){3} (0-9){2}-(0-9){3}"> regex regular expresion
+        <br>
+        <br>   
+        <label for="url">enter url</label> 
+        <input type="url" name="url" id="url">
+        <input type="image" src="https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_640.jpg" name="image">
+        <br>
+        <br>
+        <!--drop down-->
+        <label for="">select your state</label>
+        <select name="state" id="state" size="2" >
+            <option value="maharashtra">maharashtra</option>
+            <option value="jammu kashmir">jammu kashmir</option>
+            <option value="madhya pradhesh">madhya pradhesh</option>
+            <option value="Andhra pradhesh">Andhra pradhesh</option>
+            <option value="karnataka" selected>karnataka</option>
+            <option value="Himachal pradhesh">Himachal pradhesh</option>
+        </select>
+        <br>
+        <br>
+        <!--
+            multipal at a time show many state
+            adress box is resizebal
+        row and column used to set hight and breath weidth-->
+        <label for="adress">add adresss</label>
+        <textarea name="" id="adress" cols="30" rows="10" >add adress here</textarea>
+        <br>
+        <br>
+        <lebel for="">add skills</lebel>
+        <input list="skills" name="skills">
+        <detalist id="skills">
+            <option value="c++">c++</option>
+            <option value="c">c</option>
+            <option value="python">python</option>
+            <option value="java">java</option>
+            <option value="javascript">javascript</option>
+        </detalist>
+        <br>
+        <br>
+        <input type="submit" value="submit" >
+        <input type="reset" value="reset" disabled>
+        <input type="button" value="button" onclick="alert('this is alert')"  >
+        <input type="button" value="click twice" ondblclick="console.log( 'button click twice')" >
+
+        <button onclick="alert('this is alert')">sample button 2</button>
+   </form>
+
+</body>
+</html> 
+<!--attribute
+    list = 
+    value= to give initial value to input
+    readonly= when it is used then not changed value 
+    disable = cannot edite one time you give value 
+    size= increase size of input filled 
+    max length= count input character only add chracter you give 
+    autofocus = any filled you give autofocus then these word or border focus 
+    min and max = any value give restrict then used min or max used for number,date,time filled
+    multipal = multipal filles you want then used multipal
+    pattern = in these we give some rule like (0-9){3} (0-9){2}-(0-9){3} its is regexs then we have follow these rule 
+    required = if you use these attribute then you give any value for these atrribute otherwise cannot be submitted
+    step = specifice step number
+    any image you want to show then used height input tag we de4ont used height and width if change then used css style attribute
+    autocomplete = if we fill any name in name box then after we delet then these delete letter also show after we click on name box in suggestion 
+    drop down = show in state like many option
+
+-->
+

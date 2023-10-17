@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="alert('form submitted')" onreset="console.log('form reset')">
+        <lebel for="">blur and focus example</lebel>
+        <input type="" name="" id="" onblur="console.log('input field is blurred now')" onfocus="console.log('input filled is focus')">
+   
+   <br>
+<hr>
+<br>
+<label for="">onchange example</label>
+<input type="text" name="fname" id="" value="sample" onchange="console.log('value changed')" oninput="console.log('user add input')">
+<br>
+<hr>
+<label for="">search</label>
+<input type="search" name="search" id="" onsearch="alert('search value')">
+<br>
+<input type="text" value="sample checks" tittle="numbers and special chracters are not allowed" pattern="^(A-Za-z/s)+$" maxlength="5" oninvalid="console.log('invalid valuesss')" onselect="console.log('value selecteds');">
+<br>
+<input type="submit" value="submit">
+</form>
+    
+</body>
+</html>
+<!--
+     Form EVENT
+    onblur next javascript code if when blur then these code run 
+    console,log any code return in bracket then show these code it is show warning and error window c
+    onfocus focus input codes
+    onchanged any value return
+    oninput s
+    onsubmit form submite then shoe in 2sec and if we used alert then one message come submitted just like
+     -->

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding demo</title>
+    <style>
+        /* padding is distance between containt area */
+        .div1{
+            background-color: aquamarine;
+            border:blueviolet 3px solid;
+            /* padding-top: 10px;
+            padding-bottom: 30px;
+            padding-left: 40px;
+            padding-right: 50px; */
+            /* short hand property */
+            /* padding:40px;
+             */
+             padding: 10%;
+
+        }
+       
+        .div2{
+            background-color: aquamarine;
+            border: 3px solid;
+            padding: 30px;
+           
+        }
+        p{
+           
+            background-color: chartreuse;
+            padding: inherit;
+            
+
+        }
+        .div3{
+            width: 300px;
+            background-color: blue;
+        }
+        .div4{
+            width: 300px;
+            padding: 40px;
+            box-sizing: border-box;
+            background-color: green;
+        }
+    /* div 3 and 4 width same after padding apply then width will increase 300+40+40+=380 after adding prperty then padding increase but we need same width 300px then add box sizing property*/
+    </style>
+</head>
+<body>
+    <!-- padding contains 3 type value 
+    px, %, inherit -->
+    <div class="div1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quisquam delectus, saepe sed, corporis beatae natus maxime et soluta unde magni commodi voluptatibus voluptatum harum debitis, fuga facere atque alias?
+
+    </div>
+
+    <br>
+
+    <div class="div2">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio odit qui deserunt! Minima eaque veritatis fugit laudantium, possimus, porro ab perferendis atque natus doloribus rerum aliquid magnam at alias! Minus.</p>
+    </div>
+
+    <br>
+
+    <div class="div3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum harum distinctio eaque maxime cum labore minus omnis ex autem animi. Eaque aliquam consectetur dolore sapiente deleniti libero non et aut.</div>
+    <br>
+    
+    <div class="div4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet soluta harum, quidem officiis quod sint fugit doloremque dolorem voluptas odit. Magni voluptatum et, obcaecati cum quibusdam veritatis rerum accusamus molestiae!</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--element [sttribute]{
+        property:value
+    }-->
+    
+    <title>Attribute selector</title>
+    <style>
+       /* a[target]{
+            color: brown;
+        }*/
+        a[target='_blank']{
+            color: blue;
+        }
+        p[class='check']{
+            color: red;
+        }
+       /* p[class]{
+            color: brown;
+        }*/
+        p[class~='sample']{
+            border:3px solid green;
+        }
+        p[class|='lorem-sample']{
+            border:8px solid rgb(185, 31, 95);
+        }
+        p[title^='panda']{
+            background-color: yellow;
+        } 
+        p[title$='happy']{
+            text-decoration: line-through ;
+        }  
+        p[title*='app']{
+            text-decoration: wavy ;
+            font-size: 20px;
+        }
+
+
+        
+
+            
+
+    </style>
+</head>
+<body>
+    <!--it applies styling on basis atrribute and the value of attribute of html element
+    1. [attribute]
+    2.[attribute 'value'] (exact value matching)
+    3.[attribute~=value]should contain this value
+    4.[attribute|='value'](| pipe) exact match or followed by the hyphen(-)
+    5.[attribute^='value'] value should start with given value
+    6.[attribute$='value'] should end the value by specified value
+    7.[attribute*='value'] specified value should part of attrribute -->
+    
+    <a href="">sample 1</a>
+    <br>
+    <a href="" target="_self">sample 2</a>
+    <br>
+    <a href="" target="_parent">sample 3</a>
+    <br>
+    <a href="" target="_blank">sample 4</a>
+    <br>
+
+
+    <p class="check sample" title="panda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, vitae iste assumenda consectetur sequi qui inventore quos repudiandae, sint quam debitis quo earum obcaecati eligendi est deserunt quisquam dolore fuga.</p>
+    <br>
+    <p class="lorem" title="panda-happy" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, vitae iste assumenda consectetur sequi qui inventore quos repudiandae, sint quam debitis quo earum obcaecati eligendi est deserunt quisquam dolore fuga.</p>
+    <br>
+    <p class="lorem-sample" title="cutepanda" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, vitae iste assumenda consectetur sequi qui inventore quos repudiandae, sint quam debitis quo earum obcaecati eligendi est deserunt quisquam dolore fuga.</p>
+    <br>    
+    <p class="check sample" title="panda happy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, vitae iste assumenda consectetur sequi qui inventore quos repudiandae, sint quam debitis quo earum obcaecati eligendi est deserunt quisquam dolore fuga.</p>
+    
+
+
+</body>
+</html>

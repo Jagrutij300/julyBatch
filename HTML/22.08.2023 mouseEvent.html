@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>Document</title>
+</head>
+<body>
+    <!--onclick event we in buttom
+        ondouble click aslo used for div tag
+        onmousemove
+        onmouse entereds
+        onmoseleave
+ -->
+    <button onclick="console.log('button clicked')"> click</button>
+    <button ondblclick="console.log('button double clicked')"> click 2</button>
+    <p onclick="alert('clicked on paraghraph')">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum consequuntur maiores placeat quos amet, adipisci eos dolor doloribus iure voluptatum sapiente quibusdam hic, repellendus labore distinctio architecto est fugit veritatis.</p>
+    
+    <div id="hey" style="height:200px; width: 500px; background-color: blue;" onclick="console.log=('clicked in div')" onmousemove="" onmouseenter="console.log('mouse entered')"></div>
+<br>
+<script>
+    function enter() {
+        console.log('mouse entered')        
+        document.getElementById('hey').style.backgroundColor='red';
+        document.getElementById('hey').style.height='500px';
+        document.getElementById('hey').style.width='700px';      
+    }
+    function leave(){
+        console.log('mouse left')
+        document.getElementById('hey').style.backgroundColor='blue'; 
+        document.getElementById('hey').style.height='200px';
+        document.getElementById('hey').style.width='500px';
+    }
+</script>
+
+
+</body>
+</html>

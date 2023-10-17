@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>border</title>
+    <style>
+        /* padding - means distance between containt area and border area
+           margin - outside area of border called margin */
+        .solid{
+            height: 100px;
+            width: 200px;
+            padding: 15px;
+            border-style: solid;
+            /* border-width: thin; */
+            /* border-width: medium; */
+            /* border-width: thick; */
+             border-width: 10px; 
+            /* border-width: 5px 10px 15px 20px; */
+            /* border-width: 5px 10px 15px ; */
+            /* border-width: 5px 10px; */
+            border-color: rgba(219, 29, 29, 0.932);
+            /* border-color: red blueviolet green yellow; */
+            /* border-color: red blueviolet green ; */
+            /* border-color: red blueviolet  */
+            border: 15px solid crimson; 
+            border-radius: 20px;
+
+        }      
+        
+           .dotted{
+            height: 300px;
+            width: 300px;
+            /* border-color: purple; */
+            /* border-style: solid; */
+            border-width: 15px;
+             border-top-style: dotted ; 
+             border-top-color: brown;
+            border-right-style: dashed;
+            border-left-style: groove;
+
+        }
+        .dashed{
+            border-style: dashed ;
+        }
+        .double{
+            border-style: double ;
+        }
+        .groove{
+            border-style: groove ;
+        }
+        .ridge{
+            border-style: ridge ;
+        }
+        .inset{
+            border-style: inset ;
+        }
+        .outset{
+            border-style: outset ;
+        }
+        .none{
+            border-style: none ;
+        }
+        .hidden{
+            border-style: hidden ;
+        }
+        button:hover{
+            border-style: hidden;
+        }
+        .button{
+            border-style: dotted;
+        }
+        .mixed{
+            /* border-style: top right bottom left - clockwise direction; */
+            /* border-style: solid dotted dashed none; */
+            /* border-style: top right&left bottom; */
+            /* border-style: solid dotted dashed; */
+            /* border-style: top&down left&righ; */
+
+            border-style: solid dotted ;
+
+        }
+        
+
+        
+
+
+    </style>
+</head>
+<body>
+
+    <div class="solid">border solid</div>
+    <p>djcnuygfyugfjcnokjdiehfiufhkmc</p>
+    <br>
+    <div class="dotted">border dotted</div>
+    <br>
+    <div class="dashed">border dashed</div>
+    <br>
+    <div class="double">border double</div>
+    <br>
+    <div class="groove">border groove</div>
+    <br>
+    <div class="ridge">border ridge</div>
+    <br>
+    <div class="inset">border inset</div>
+    <br>
+    <div class="outset">border outset</div>
+    <br>
+    <div class="none">border none</div>
+    <button class="hidden">lette</button>
+
+    <hr>
+    <div class="mixed">mixed border none</div>
+
+
+
+    
+</body>
+</html>

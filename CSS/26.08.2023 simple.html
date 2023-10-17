@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>simple selectors</title>
+    <style>
+        h1{
+            color: chartreuse;
+        }
+        p{
+            font-size: 30px;
+            color: blueviolet;
+        }
+        #sample{ background-color: blueviolet;
+                border: solid red 2px;}
+
+        .para{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .head{ 
+            color: rgb(228, 11, 11);
+        }
+        h2.head{ background-color: aqua;}
+        h1,h2,h3,h4{background-color: aqua;}
+      
+        *{ text-align: center;
+           background-color: cornflowerblue;}
+       
+    </style>
+</head>
+<body>
+    <!--simple;element(tag), id(# used for id never repet value), class(. is used), universal selector(all page in body give same style using *)
+    h1 element selector
+-->
+
+    <h1 id="sample">simple selectors</h1>
+    <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <p class="para">paragraph 3</p>
+    <p class="para" >paragraph 4</p>
+    <p class="para">paragraph 5</p>
+    <h3 class="head">heading 3</h3>
+    <h2 class="head">heading 2</h2>
+    <h4 class="head">heading 4</h4>
+    
+</body>
+</html>

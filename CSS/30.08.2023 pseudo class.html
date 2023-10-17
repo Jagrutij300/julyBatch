@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>pseudo class</title>
+    <!--selector:pseudo class{
+        property:value;}-->
+        <style>
+            a:link{
+                color: black;
+                  
+            }
+            a:visited{
+                color: blue;
+                font-style:italic;
+            
+            }
+            a:hover{
+                color: magenta;
+                font-size:25px;
+            }
+            a:active{
+                color: rgb(238, 11, 11);
+                font-size: larger;
+            }
+            /*div{height: 200px;
+                width: 300px;
+                background-color: aqua;
+            }*/
+
+            /*div:hover{
+                height: 200px;
+                width: 300px;
+                background-color: blueviolet;
+            }*/
+            .input{
+                background-color: yellow;
+                width: 200px;
+                height: 40px;
+                border: 2px solid red; 
+
+            }
+            input:focus{
+                background-color: blue;
+            }
+            input:checked{
+                height: 60px;
+                width: 30px;
+            }
+            div p:first-child{
+                color: blue;
+                font-size: 30px;
+            }
+
+             
+            
+
+        </style>
+
+</head>
+<body>
+    <!--this applies style on the different stste of specific element -->
+    <a href="#">sample link1</a>
+    <br>
+    <a href="######">sample link2</a>
+    <div>this is div</div>
+    <br>
+    <input class="input" type="text">
+    <br>
+    <br>
+    <input type="radio" name="" id="">
+    <br>
+    <br>
+    <input type="cheakbox" name="" id="">
+    <div>
+        <p>para1</p>
+        <p>para2</p>
+        <p>para3</p>
+    </div>
+
+    
+
+    
+</body>
+</html>

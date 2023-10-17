@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--selector::pseudo-element
+        {property:value}-->
+   
+    <title>pseudo elements</title>
+    <style>
+        #para::first-line{
+            color: green;
+
+        }
+        #para::first-letter{
+            color: blue;
+            font-size: 50px;
+
+        }
+        p::before{
+            content:"####";
+        }
+        p::after{
+            content: '******';
+        }
+        li.aa::marker{
+            color: green;
+            font-size: 30px;
+        }
+        p::selection{
+            background-color: pink;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- applies styling to the specific part of  html element
+    1, first line -->
+
+    <p id="para">iLorem, ipsum dolor sit amet consectetur adipisicing elit. Harum explicabo incidunt Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur magnam esse dolorum facilis saepe corporis corrupti eius nemo tenetur dolorem commodi, illo quia perspiciatis aspernatur exercitationem! Corrupti corporis iusto enim! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem aliquid corrupti architecto a obcaecati, velit soluta animi, qui dicta sed vitae neque magnam praesentium quia ad. Nihil vero harum debitis! Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, qui necessitatibus veniam illo placeat porro atque tempora velit. Ducimus ratione laboriosam placeat aut architecto earum assumenda, nostrum voluptatem ad eaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ab in modi molestias asperiores hic, dolorum velit, eos consequatur eveniet aspernatur alias reprehenderit itaque, culpa maxime fuga qui quae! Soluta.</P>
+<br>
+<br>
+    <p>this is paragraph </p>
+    <ol>
+        <li class="aa">one</li>
+        <li>two</li>
+        <li>three</li>
+    </ol>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    
+
+        </html>
